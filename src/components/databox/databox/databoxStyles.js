@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { QUERIES } from "../../../helpers/mediaQueries";
 
 export const DataWrap = styled.section`
   background-color: #272234;
@@ -7,41 +6,36 @@ export const DataWrap = styled.section`
   display: inline-block;
   border-radius: 0.5rem;
   position: relative;
+  cursor: pointer;
+  z-index: 10;
 `;
+
 export const DataInnerWrap = styled.div``;
-export const DataDisplay = styled.div``;
-export const DataHeader = styled.div`
-  padding-bottom: 0.6rem;
+export const DataDisplay = styled.div`
 
-  h3 {
-    border-bottom: var(--border-dotted);
-    display: inline-block;
+`;
+
+export const DataTitle = styled.h3`
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  font-weight: var(--font-weight-400);
+  color: var(--color-font-200);
+`;
+
+export const DataInfo = styled.h4`
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding-top: 0.5rem;
+
+  span {
+    color: var(--color-font-200);
   }
 `;
-export const DataInfo = styled.div`
-  display: flex;
-
-  & > * {
-    /* flex: 1; */
-    padding: 0rem 0.75rem 0rem 0.75rem;
-    border-left: var(--border-dotted);
-  }
-
-  div:first-child {
-    padding: 0rem 0.75rem 0rem 0rem;
-    border-left: none;
-  }
-
-  div:last-child {
-    padding: 0rem 0rem 0rem 0.75rem;
-  }
-`;
-export const DataInfoItem = styled.div``;
 
 export const DataHidden = styled.div`
-  background-color: red;
+  /* background-color: red;
   min-width: 200px;
-  min-height: 100px;
+  min-height: 100px; */
   padding-top: 0.75rem;
   display: none;
 

@@ -1,18 +1,18 @@
 import React from "react";
-import { GlobalStyles } from "./styles/GlobalStyles";
+import { GlobalStyles, Main } from "./styles/GlobalStyles";
 
-//Imports: Components
-import Databox from "./components/slices/databox/databox";
+//Imports: Section
+import DataboxSlider from "./components/sections/databoxSlider/databoxSlider";
 
 //Imports: Data
-import { dataSample } from "./data/data";
+
 
 function App() {
   return (
-    <>
+    <Main>
       <GlobalStyles />
-      <Databox data={dataSample} />
-    </>
+      <DataboxSlider />
+    </Main>
   );
 }
 

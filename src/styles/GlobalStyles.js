@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { QUERIES } from "../helpers/mediaQueries";
 
 export const GlobalStyles = createGlobalStyle`
@@ -91,7 +91,7 @@ export const GlobalStyles = createGlobalStyle`
     ///////////////////////////////////////////////////////
     //TODO: TYPOGRAPHY
 
-    h3, h4 {
+    h3 {
         font-size: 0.8rem;
         line-height: 1rem;
         font-weight: var(--font-weight-400);
@@ -99,12 +99,15 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h4 {
-        font-size: 0.6rem;
-    }
-
-    h5 {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.2rem;
     }
     
+`;
+
+export const Main = styled.main`
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: var(--center-container);
+  padding: 2rem 0rem;
 `;
